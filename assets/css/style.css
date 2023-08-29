@@ -1,0 +1,62 @@
+.header a, a:hover{
+	color: #f0ad4e;
+	text-decoration: none;
+}
+
+.header h1 {
+	letter-spacing: 15px;
+	font-size: 300%;
+}
+
+.header p {
+	color: white !important;
+	font-size: 90%;
+	letter-spacing: 3px;
+}
+
+.nav-pills li a{
+	color: white;
+}
+
+.nav-pills li a:hover{
+	background-color: #443FBFFF;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #443FBFFF;
+}
+
+.navbar-inverse {
+    padding: 1%;
+    border-radius: 0px;
+}
+
+.navbar-inverse {
+    background-color: #050505;
+    border-color: #000000;
+}
+
+@media (max-width: 767px) {
+
+	.nav-pills>li{
+		float: none;
+	}
+
+	.nav-pills {
+		text-align: center;
+	}
+
+	.nav-pills>li>a {
+    	border-radius: 13px;
+    }
+
+    .header h1 {
+    	letter-spacing: 5px;
+    	font-size: 280%;
+    }
+
+    .header {
+    	text-align: center;
+    }
+}
