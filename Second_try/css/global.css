@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Playfair Display";
+    scroll-behavior: smooth;
 }
 
 
@@ -11,7 +12,7 @@
     --off-white: #F5F5DC;
     --color-border-button: rgb(156, 90, 64);
     --color-text-gold: rgb(250, 216, 26);
-    
+
     scroll-behavior: smooth;
 
     --bs-breakpoint-xs: 0;
@@ -20,4 +21,17 @@
     --bs-breakpoint-lg: 992px;
     --bs-breakpoint-xl: 1200px;
     --bs-breakpoint-xxl: 1400px;
+}
+
+.menu_daily-recomendation {
+    color: white;
+    background-color: #060505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_daily-recomendation h2 {
+    margin: 0px;
+    margin-top: 2%;
 }
