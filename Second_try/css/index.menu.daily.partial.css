@@ -37,5 +37,20 @@
 
 .daily-recomendation p {
     color: white;
-    white-space: inherit;
+    text-align: justify;
+    text-indent: 5%;
+    font-size: larger;
+}
+
+.menu_daily-recomendation {
+    color: white;
+    background-color: #060505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_daily-recomendation h2 {
+    margin: 0px;
+    margin-top: 2%;
 }
