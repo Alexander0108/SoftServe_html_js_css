@@ -6,9 +6,21 @@
     scroll-behavior: smooth;
 }
 
+.divider {
+    display: flex;
+    background-color: rgb(85, 85, 85);
+    height: 2px;
+    min-width: 3%;
+}
+
+.vertical-divider-contact_reservation {
+    border-right: 2px solid rgb(85, 85, 85);
+    height: 50vh;
+}
+
 
 :root {
-    --dark-blue: #030a1a;
+    --bg-color-black: #060505;
     --off-white: #F5F5DC;
     --color-border-button: rgb(156, 90, 64);
     --color-text-gold: rgb(250, 216, 26);
