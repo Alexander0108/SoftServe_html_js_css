@@ -16,12 +16,18 @@
 .contact_reservation-block-text-info-title h3{
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 5%;
 }
 
 .contact_reservation-block-text-info p{
-    width: 80%;
+    width: 85%;
+}
+
+.contact_reservation-block-text-info p::before{
+    content: '\2022';
+    margin-left: 3%;
+    margin-right: 2%;
 }
 
 .contact_reservation-block-text-info-p {

@@ -1,0 +1,33 @@
+.faq-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-color-black);
+}
+
+.faq-info_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 2%;
+}
+
+.faq-info_text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2%;
+    color: white;
+}
+
+.faq-info_text_answer {
+    width: 100%;
+}
+
+.faq-info_text_answer::before {
+    content: '\2022';
+    margin-left: 3%;
+    margin-right: 2%;
+}
