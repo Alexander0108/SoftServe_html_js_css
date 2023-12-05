@@ -55,3 +55,8 @@
     margin: 0px;
     margin-top: 2%;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 900;
+}

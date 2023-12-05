@@ -18,8 +18,10 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    width: 85%;
     margin: 2%;
     color: white;
+    font-size: larger;
 }
 
 .faq-info_text_answer {

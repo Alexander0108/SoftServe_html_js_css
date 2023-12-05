@@ -7,7 +7,7 @@
     padding: 10px 30px 10px 10px;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .header__logo h1 {
@@ -21,6 +21,10 @@
 
 .navbar-nav a {
     font-size: 21px;
+}
+
+.navbar-nav {
+    z-index: 15;
 }
 
 .navbar-brand {
@@ -105,5 +109,6 @@
         justify-content: center;
         align-items: center;
     }
+    
 
 }
