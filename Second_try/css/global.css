@@ -26,6 +26,10 @@ a:hover {
     height: 50vh;
 }
 
+::marker {
+    color: transparent;
+}
+
 
 :root {
     --bg-color-black: #060505;

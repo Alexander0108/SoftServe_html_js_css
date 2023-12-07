@@ -78,6 +78,7 @@
     border-color: rgb(156, 90, 64);
     font-size: 20px;
     margin: 20px;
+    margin-top: 10%;
     padding: 10px;
     color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -109,6 +110,41 @@
         justify-content: center;
         align-items: center;
     }
+
+}
+
+@media (max-width: 992px) {
+
+    .greetings_info {
+        margin-top: 15%;
+    }
     
+    .greetings_label {
+        font-size: 65px;
+    }
+
+    .greetings_buttons_about_us, 
+    .greetings_buttons_menu {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .greetings_info {
+        margin-top: 25%;
+        height: 30%;
+    }
+
+    .greetings_label {
+        font-size: 12vh;
+    }
+
+    .greetings_buttons_about_us, 
+    .greetings_buttons_menu {
+        font-size: 2.5vh;
+        margin-top: 15%;
+    }
 
 }

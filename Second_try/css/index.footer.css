@@ -60,3 +60,21 @@
 .footer-info_follow-us-link:hover  {
     color: white;
 }
+
+@media (max-width: 992px) {
+
+    .footer-info_contact-reservations_title, 
+    .footer-info_follow-us_title, 
+    .footer-info_hours_title {
+        margin-bottom: 5%;
+    }
+
+    .footer-info p{
+        font-size: 2.2vh;
+    }
+
+    .footer-copyright p{
+        font-size: 2.2vh;
+    }
+
+}

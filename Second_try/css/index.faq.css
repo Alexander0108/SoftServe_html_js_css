@@ -33,3 +33,19 @@
     margin-left: 3%;
     margin-right: 2%;
 }
+
+@media (max-width: 992px) {
+
+    .faq-info_text p{
+        font-size: 2.8vh;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .faq-info_text p{
+        font-size: 2.5vh;
+    }
+
+}
