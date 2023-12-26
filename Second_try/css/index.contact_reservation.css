@@ -1,13 +1,15 @@
+
 .contact_reservation-block {
     display: flex;
     align-items: center;
+    height: auto;
     background-color: var(--bg-color-black);
     border-bottom: 2px solid rgb(85, 85, 85);
 }
 
 .contact_reservation-block-text {
     width: 50%;
-    height: 45vh;
+    height: 60vh;
     font-size: 3vh;
     background-color: var(--bg-color-black);
     color: white;
@@ -40,12 +42,50 @@
 .contact_reservation-block-text-info-p {
     display: flex;
     flex-direction: column;
+    flex-direction: column;
     align-items: center;
     width: 95%;
 }
 
+.contact_reservation-block-text-info-p-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact_reservation-block-text-info a{
     color: white;
+}
+
+.reservation_button {
+    display: flex;
+    justify-content: center;
+}
+
+.reservation_button_icon {
+    border: 2px solid transparent;
+    border-color: rgb(156, 90, 64);
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+.reservation_button_icon:hover {
+    color: var(--color-text-gold);
+    border-color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.col-form-label {
+    color: black;
+}
+
+#exampleModalLabel {
+    color: black;
 }
 
 @media (max-width: 992px) {
@@ -54,12 +94,21 @@
         font-size: 2.8vh;
     }
 
+    .reservation_button_icon {
+        font-size: 15px;
+    }
+
 }
 
 @media (max-width: 800px) {
 
     .contact_reservation-block-text-info p{
         font-size: 2.5vh;
+    }
+
+    .reservation_button_icon {
+        font-size: 2.5vh;
+        margin-top: 5%;
     }
 
 }

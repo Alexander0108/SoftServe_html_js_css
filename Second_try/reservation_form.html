@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Form</title>
+</head>
+<body>
+    <h2>Reservation Form</h2>
+    <form id="reservationForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br>
+    
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br>
+    
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" required><br>
+    
+        <label for="partySize">Number of People:</label>
+        <input type="number" id="partySize" required><br>
+    
+        <label for="bookingTime">Booking Time:</label>
+        <input type="datetime-local" id="bookingTime" required><br>
+    
+        <label for="preferences">Preferences:</label>
+        <input type="text" id="preferences"><br>
+    
+        <button type="button" onclick="submitReservation()">Submit Reservation</button>
+    </form>
+    <script>
+        function submitReservation() {
+            const firstName = document.getElementById("firstName").value;
+            const lastName = document.getElementById("lastName").value;
+            const phoneNumber = document.getElementById("phoneNumber").value;
+            const partySize = document.getElementById("partySize").value;
+            const bookingTime = document.getElementById("bookingTime").value;
+            const preferences = document.getElementById("preferences").value;
+
+            fetch("http://localhost:5432/submit_reservation", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    firstName,
+                    lastName,
+                    phoneNumber,
+                    partySize,
+                    bookingTime,
+                    preferences,
+                }),
+            }).then(response => {
+                if (response.ok) {
+                    alert("Reservation submitted successfully!");
+                    window.close();
+                } else {
+                    alert("Error submitting reservation. Please try again.");
+                }
+            });
+        }
+    </script>
+</body>
+</html>
