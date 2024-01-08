@@ -1,0 +1,79 @@
+.menu {
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    background-color: var(--bg-color-black);
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.carousel-inner {
+    height: 100%;
+    width: 70vh;
+    margin-right: 5vh;
+    margin-left: 5vh;
+    border-radius: 10px;
+}
+
+.c-item {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.carousel {
+    height: 50vh;
+}
+
+.c-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.daily-recomendation {
+    margin-right: 4%;
+    max-height: 100%;
+}
+
+.daily-recomendation p {
+    color: white;
+    text-align: justify;
+    text-indent: 5%;
+    font-size: 3.3vh;
+}
+
+.menu_daily-recomendation {
+    color: white;
+    background-color: var(--bg-color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_daily-recomendation h2 {
+    margin: 0px;
+    margin-top: 2%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 10;
+}
+
+@media (max-width: 992px) {
+
+    .daily-recomendation p {
+        font-size: 2.8vh;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .carousel-inner {
+        max-width: 300px;
+    }
+    
+
+}

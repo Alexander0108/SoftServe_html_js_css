@@ -1,0 +1,114 @@
+<!-- <form action="localhost:3000/submit_reservation" method="post" id="reservationForm"> -->
+<form action="/create" method="post" id="reservationForm">
+  <section class="contact_reservation">
+    <div class="contact_reservation-block">
+      <div class="contact_reservation-block-text">
+        <div class="contact_reservation-block-text-info">
+          <div class="contact_reservation-block-text-info-title">
+            <h3>Reservation Benefits</h3>
+          </div>
+          <div class="contact_reservation-block-text-info-p">
+            <p>Reserve your table for an exquisite dining experience at FoodWonders.</p>
+            <p>Specify your preferred date and time for a magical culinary journey.</p>
+            <p>We will prepare everything in advance for your perfect journey into the world of flavors!</p>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-divider-contact_reservation"></div>
+      <div class="contact_reservation-block-text">
+        <div class="contact_reservation-block-text-info">
+          <div class="contact_reservation-block-text-info-title">
+            <h3>Contact Us</h3>
+          </div>
+          <div class="contact_reservation-block-text-info-p">
+            <p>For reservations and inquiries, please call us at: (555) 123-4567.</p>
+            <p>Reach out via email at: <a href="mailto:foodwonders@gmail.com"> foodwonders@gmail.com</a>.</p>
+            <p>Visit us at: Wonderland, 123 Enchanted Lane, Magic City.</p>
+            <div id="faq-link"></div>
+          </div>
+        </div>
+        <div class="contact_reservation-block-text-info-p-select">
+          <p id="contact_reservation-block-text-info-p-select-or">Or</p>
+        </div>
+        <div class="reservation_button">
+          <button type="button" class="reservation_button_icon" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo" tabindex="-1">Make a Reservation</button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Reservation</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-phone" class="col-form-label">Recipient (phone number):</label>
+                      <input type="text" class="form-control" id="recipient-phone" name="recipient-phone">
+                      <span class="clarification-text">We will call you back to clarify order and reserve time</span>
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">First name:</label>
+                      <input type="text" class="form-control" id="recipient-name" name="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipient-last-name" class="col-form-label">Last Name:</label>
+                      <input type="text" class="form-control" id="recipient-last-name" name="recipient-last-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipient-party-size" class="col-form-label">Party Size:</label>
+                      <input type="text" class="form-control" id="recipient-party-size" name="recipient-party-size">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Preferences (Not Necessary):</label>
+                      <textarea class="form-control" id="message-text" name="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="submitReservation()">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</form>
+<script>
+  function submitReservation() {
+    const firstName = document.getElementById("recipient-name").value;
+    const lastName = document.getElementById("recipient-last-name").value;
+    const phoneNumber = document.getElementById("recipient-phone").value;
+    const partySize = document.getElementById("recipient-party-size").value;
+    const bookingTime = document.getElementById("bookingTime").value;
+    const preferences = document.getElementById("message-text").value;
+
+    event.preventDefault(); // Prevent default form submission behavior
+
+    fetch("http://localhost:5000/submit_reservation", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        firstName,
+        lastName,
+        phoneNumber,
+        partySize,
+        bookingTime,
+        preferences,
+      }),
+    }).then(response => {
+      if (response.ok) {
+        alert("Reservation submitted successfully!");
+        window.close();
+      } else {
+        alert("Error submitting reservation. Please try again.");
+      }
+    });
+  }
+</script>

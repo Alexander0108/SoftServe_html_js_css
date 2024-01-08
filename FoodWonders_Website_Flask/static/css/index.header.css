@@ -1,0 +1,150 @@
+.header {
+    font-family: "Playfair Display";
+}
+
+.navbar {
+    background-color: var(--dark-blue);
+    padding: 10px 30px 10px 10px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.header__logo h1 {
+    color: var(--off-white);
+}
+
+.nav-link {
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar-nav a {
+    font-size: 21px;
+}
+
+.navbar-nav {
+    z-index: 15;
+}
+
+.navbar-brand {
+    font-size: 26px;
+}
+
+.greetings_background {
+    background-image: url(../img/hero_background_brightless.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.greetings_info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    height: 35%;
+    width: auto;
+    justify-content: space-between;
+}
+
+.greetings_label {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    margin-top: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    backdrop-filter: blur(2px);
+    border: 2px solid transparent;
+    border-color: rgb(156, 90, 64);
+    border-radius: 5px;
+}
+
+.greetings_buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.greetings_buttons_about_us,
+.greetings_buttons_menu {
+    border: 2px solid transparent;
+    border-color: rgb(156, 90, 64);
+    font-size: 20px;
+    margin: 20px;
+    margin-top: 10%;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+    justify-content: space-between;
+}
+
+.greetings_buttons_about_us:hover {
+    color: var(--color-text-gold);
+    border-color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.greetings_buttons_menu:hover {
+    color: var(--color-text-gold);
+    border-color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .greetings_info {
+        margin-top: 15%;
+    }
+    
+    .greetings_label {
+        font-size: 65px;
+    }
+
+    .greetings_buttons_about_us, 
+    .greetings_buttons_menu {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .greetings_info {
+        margin-top: 25%;
+        height: 30%;
+    }
+
+    .greetings_label {
+        font-size: 12vh;
+    }
+
+    .greetings_buttons_about_us, 
+    .greetings_buttons_menu {
+        font-size: 2.5vh;
+        margin-top: 15%;
+    }
+
+}

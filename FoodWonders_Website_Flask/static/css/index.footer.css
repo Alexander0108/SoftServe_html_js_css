@@ -1,0 +1,80 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color-black);
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: var(--bg-color-black);
+    margin: 2.5%;
+}
+
+
+.footer-info p::before {
+    content: '\2022';
+    margin-left: 3%;
+    margin-right: 2%;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-info_contact-reservations,
+.footer-info_follow-us,
+.footer-info_hours {
+    width: 30%;
+}
+
+.footer-info_contact-reservations_title,
+.footer-info_follow-us_title,
+.footer-info_hours_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.footer-info_follow-us-links {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.footer-info_follow-us-link {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-info_follow-us-link p {
+    content: '\2022';
+    margin-left: 3%;
+    margin-right: 2%;
+}
+
+.footer-info_follow-us-link:hover  {
+    color: white;
+}
+
+@media (max-width: 992px) {
+
+    .footer-info_contact-reservations_title, 
+    .footer-info_follow-us_title, 
+    .footer-info_hours_title {
+        margin-bottom: 5%;
+    }
+
+    .footer-info p{
+        font-size: 2.2vh;
+    }
+
+    .footer-copyright p{
+        font-size: 2.2vh;
+    }
+
+}

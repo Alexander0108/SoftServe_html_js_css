@@ -1,0 +1,45 @@
+<section class="menu" id="daily-recomendation">
+    <div id="carousel" class="c-menu">
+        <div id="menu_carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#menu_carousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#menu_carousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#menu_carousel" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-item c-item active">
+                    <img class="d-block w-100 c-image" src="{{ url_for('static', filename='img/daily_recomendation/fish_2.jpg') }}" alt="fish">
+                </div>
+                <div class="carousel-item c-item">
+                    <img class="d-block w-100 c-image" src="{{ url_for('static', filename='img/daily_recomendation/meat.jpg') }}" alt="meat">
+                </div>
+                <div class="carousel-item c-item">
+                    <img class="d-block w-100 c-image" src="{{ url_for('static', filename='img/daily_recomendation/sandwich.jpg') }}" alt="sandwich">
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#menu_carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#menu_carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="daily-recomendation">
+        <p class="daily-recomendation_text">
+            Introducing our daily culinary revelation
+            – an invitation to indulge in the extraordinary. 
+            Every day, our chef curates a special recommendation 
+            to elevate your dining experience. From 
+            exclusive "Dish of the Day" creations to tantalizing 
+            new additions, our Daily Recommendations promise a 
+            journey into uncharted flavors. These carefully 
+            curated selections are a testament to our commitment 
+            to surprise and delight your palate. 
+            <div id="menu-link"></div>
+        </p>
+    </div>
+
+</section>
