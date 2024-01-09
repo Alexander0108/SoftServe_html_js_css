@@ -1,4 +1,5 @@
 
+
 .contact_reservation-block {
     display: flex;
     align-items: center;
@@ -9,7 +10,7 @@
 
 .contact_reservation-block-text {
     width: 50%;
-    height: 60vh;
+    height: 65vh;
     font-size: 3vh;
     background-color: var(--bg-color-black);
     color: white;
@@ -49,13 +50,16 @@
     flex-direction: column;
     flex-direction: column;
     align-items: center;
-    width: 95%;
 }
 
 .contact_reservation-block-text-info-p-select {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contact_reservation-block-text-info-p-select p {
+    margin-bottom: 2%;
 }
 
 .contact_reservation-block-text-info a{
@@ -68,6 +72,7 @@
 }
 
 .reservation_button_icon {
+    display: flex;
     border: 2px solid transparent;
     border-color: rgb(156, 90, 64);
     font-size: 20px;
@@ -76,7 +81,7 @@
     border-radius: 5px;
     backdrop-filter: blur(2px);
     background-color: transparent;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .reservation_button_icon:hover {
